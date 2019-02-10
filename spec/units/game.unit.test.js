@@ -4,7 +4,7 @@ const Scorecard = require('bowling-challenge/scorecard.js')
 
 let scorecard;
 
-beforeAll(() => {
+beforeEach(() => {
   scorecard = new Scorecard();
 });
 
@@ -23,9 +23,9 @@ describe('#roll', () => {
 
 describe('#finalScore', () => {
   test('calculates score for whole game', () => {
-    for (let i = 0; i <= 20; i++) {
+    for (let i = 0; i < 20; i++) {
       scorecard.inputRoll(1);
     }
-    expect(scorecard.finalScore).toEqual(20);
+    expect(scorecard.finalScore()).toEqual(20);
   });
 });

@@ -1,8 +1,8 @@
-'use strict'
+'use strict';
 
 const Scorecard = require('bowling-challenge/scorecard.js')
 
-describe('Scorecard', () => {
+describe('Scorecard Features:', () => {
 
   let scorecard;
 
@@ -11,6 +11,9 @@ describe('Scorecard', () => {
   });
 
   test('player rolls 20 gutter balls', () => {
-    expect(scorecard.finalScore).toEqual(0);
+    for (let i = 0; i < 20; i++) {
+      scorecard.inputRoll(0);
+    }
+    expect(scorecard.finalScore()).toEqual(0);
   });
 });
