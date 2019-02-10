@@ -9,14 +9,14 @@ Player can roll 20 gutter balls - a "Gutter Game"
 This would show a score of 0
 ```
 
-#### Feature Two: 🚧
+#### Feature Two: ✅
 ```
 Player rolls are divided into 10 frames
 Each frame contains two rolls
 The scorecard can display the score of any roll from any frame
 ```
 
-#### Feature Three:
+#### Feature Three: 🚧
 ```
 Player can roll a spare
 They hit less than 10 on first roll
