@@ -16,4 +16,12 @@ describe('Scorecard Features:', () => {
     }
     expect(scorecard.finalScore()).toEqual(0);
   });
+
+  test('player rolls are divided into frames', () => {
+    scorecard.inputRoll(1);
+    scorecard.inputRoll(2);
+    scorecard.inputRoll(3);
+    scorecard.inputRoll(4);
+    expect(scorecard.game).toEqual([[1,2],[3,4]]);
+  })
 });
