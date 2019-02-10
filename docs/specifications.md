@@ -3,16 +3,17 @@
 Using specifications from the rules of bowling,
 features for a scorecard app are shown below:
 
-#### Feature One: 🚧
+#### Feature One: ✅
 ```
 Player can roll 20 gutter balls - a "Gutter Game"
 This would show a score of 0
 ```
 
-#### Feature Two:
+#### Feature Two: 🚧
 ```
-Player can hit one(1) pin each roll  
-This would show a score of 20
+Player rolls are divided into 10 frames
+Each frame contains two rolls
+The scorecard can display the score of any roll from any frame
 ```
 
 #### Feature Three:
