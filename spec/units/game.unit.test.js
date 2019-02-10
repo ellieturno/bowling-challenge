@@ -19,6 +19,12 @@ describe('#roll', () => {
     scorecard.inputRoll(6)
     expect(scorecard.game).toEqual([6]);
   });
+
+  test('stores rolls in frames', () => {
+    scorecard.inputRoll(1)
+    scorecard.inputRoll(2)
+    expect(scorecard.game).toEqual([1,2]);
+  });
 });
 
 describe('#finalScore', () => {
