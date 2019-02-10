@@ -15,9 +15,13 @@ class Scorecard {
   };
 
   finalScore() {
-    return this.finalScore = this.game.reduce((total, rollScore) => {
-    return total + rollScore;
+    var total = 0
+    this.game.forEach(function(frame) {
+      total += frame.reduce((accumulator, rollScore) => {
+        return accumulator + rollScore
+      });
     });
+    return total
   };
 };
 
