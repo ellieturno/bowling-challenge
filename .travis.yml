@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+ - "node"
+
+cache:
+  # caches the npm folder on Travis
+ npm: true
